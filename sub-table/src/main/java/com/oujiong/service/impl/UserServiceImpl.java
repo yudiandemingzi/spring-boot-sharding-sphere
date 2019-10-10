@@ -1,8 +1,9 @@
-package com.jincou.service.impl;
+package com.oujiong.service.impl;
 
-import com.jincou.entity.User;
-import com.jincou.mapper.UserMapper;
-import com.jincou.service.UserService;
+import com.google.common.collect.Lists;
+import com.oujiong.entity.User;
+import com.oujiong.mapper.UserMapper;
+import com.oujiong.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,11 +29,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String saveOne(User user) {
-        user.setCreateTime(new Date());
-        user.setUpdateTime(new Date());
-        user.setStatus(1);
-        userMapper.insert(user);
+    public String insertForeach(List<User> userList) {
+        for (User user : userList) {
+            user.setCreateTime(new Date());
+            user.setUpdateTime(new Date());
+            user.setStatus(0);
+        }
+        //批量插入数据
+        userMapper.insertForeach(userList);
         return "保存成功";
     }
+
 }

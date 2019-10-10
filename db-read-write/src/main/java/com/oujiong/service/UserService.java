@@ -1,6 +1,6 @@
-package com.jincou.service;
+package com.oujiong.service;
 
-import com.jincou.entity.User;
+import com.oujiong.entity.User;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.jincou.mapper;
+package com.oujiong.mapper;
 
 
-import com.jincou.entity.User;
+import com.oujiong.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

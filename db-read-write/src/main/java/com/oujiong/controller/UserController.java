@@ -1,8 +1,8 @@
-package com.jincou.controller;
+package com.oujiong.controller;
 
 
-import com.jincou.entity.User;
-import com.jincou.service.UserService;
+import com.oujiong.entity.User;
+import com.oujiong.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

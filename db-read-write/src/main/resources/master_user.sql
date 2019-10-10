@@ -3,7 +3,7 @@
 DROP TABLE IF EXISTS `tab_user`;
 
 CREATE TABLE `tab_user` (
-  `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `id` bigint(32) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `name` varchar(64) DEFAULT NULL COMMENT '姓名',
   `sex` varchar(32) DEFAULT NULL COMMENT '性别',
   `age` int(11) DEFAULT NULL COMMENT '年龄',

@@ -5,6 +5,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>db-read-write</module>
+        <module>sub-table</module>
+        <module>sub-table-read-write</module>
+        <module>sub-db-table</module>
+        <module>sub-db-table-read-write</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
