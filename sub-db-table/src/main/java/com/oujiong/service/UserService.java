@@ -8,7 +8,7 @@ import java.util.List;
  * @Description: 用户相关接口
  *
  * @author xub
- * @date 2019/10/10 下午8:53
+ * @date 2019/8/24 下午6:32
  */
 public interface UserService {
 
@@ -18,9 +18,9 @@ public interface UserService {
     List<User>  list();
 
     /**
-     *  批量 保存用户信息
-     * @param userVOList
+     *  单个 保存用户信息
+     * @param user
      */
-    String  insertForeach(List<User> userVOList);
+    String  saveOne(User user);
 
 }

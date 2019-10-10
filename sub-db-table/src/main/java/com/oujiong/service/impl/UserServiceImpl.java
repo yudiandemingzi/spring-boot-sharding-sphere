@@ -11,10 +11,9 @@ import java.util.List;
 
 
 /**
- * @Description: 用户实现类
- *
  * @author xub
- * @date 2019/10/10 下午8:53
+ * @Description: 用户实现类
+ * @date 2019/8/8 上午9:13
  */
 @Service
 public class UserServiceImpl implements UserService {
@@ -29,15 +28,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String insertForeach(List<User> userList) {
-        for (User user : userList) {
-            user.setCreateTime(new Date());
-            user.setUpdateTime(new Date());
-            user.setStatus(0);
-        }
-        //批量插入数据
-        userMapper.insertForeach(userList);
+    public String saveOne(User user) {
+        user.setCreateTime(new Date());
+        user.setUpdateTime(new Date());
+        user.setStatus(1);
+        userMapper.insert(user);
         return "保存成功";
     }
-
 }
