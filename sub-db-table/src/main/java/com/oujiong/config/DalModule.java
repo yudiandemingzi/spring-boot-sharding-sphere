@@ -4,7 +4,6 @@
 package com.oujiong.config;
 
 
-import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.shardingsphere.api.config.sharding.KeyGeneratorConfiguration;
 import org.apache.shardingsphere.api.config.sharding.ShardingRuleConfiguration;
@@ -13,16 +12,9 @@ import org.apache.shardingsphere.api.config.sharding.strategy.InlineShardingStra
 import org.apache.shardingsphere.api.config.sharding.strategy.StandardShardingStrategyConfiguration;
 import org.apache.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.Order;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.transaction.PlatformTransactionManager;
 
-import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -34,9 +26,9 @@ import java.util.Properties;
  * @Description: 连接数据库信息 包括添加插件信息
  * @date 2019/8/19 下午12:31
  */
-@Configuration
-@ComponentScan(basePackageClasses = DalModule.class)
-@MapperScan(basePackages = "com.oujiong.mapper")
+//@Configuration
+//@ComponentScan(basePackageClasses = DalModule.class)
+//@MapperScan(basePackages = "com.oujiong.mapper")
 public class DalModule {
 
 //    @Bean

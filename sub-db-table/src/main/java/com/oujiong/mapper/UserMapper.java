@@ -16,12 +16,12 @@ import java.util.List;
 public interface UserMapper {
 
     /**
-     * 插入一条记录
+     * 批量插入
      *
-     * @param record 实体对象
-     * @return 更新条目数
+     * @param list 插入集合
+     * @return 插入数量
      */
-    int insert(User record);
+    int insertForeach(List<User> list);
 
     /**
      * 获取所有用户

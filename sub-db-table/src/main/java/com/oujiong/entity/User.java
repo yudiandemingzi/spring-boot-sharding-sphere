@@ -44,7 +44,8 @@ public class User {
      */
     private Integer status;
 
-    public User(String name, String sex, Integer age) {
+    public User(Long id,String name, String sex, Integer age) {
+        this.id = id;
         this.name = name;
         this.sex = sex;
         this.age = age;

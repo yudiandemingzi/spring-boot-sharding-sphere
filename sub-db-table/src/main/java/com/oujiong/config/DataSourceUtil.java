@@ -6,7 +6,7 @@ import javax.sql.DataSource;
 
 public final class DataSourceUtil {
 
-    private static final String HOST = "localhost";
+    private static final String HOST = "47.99.203.55";
 
     private static final int PORT = 3306;
 
