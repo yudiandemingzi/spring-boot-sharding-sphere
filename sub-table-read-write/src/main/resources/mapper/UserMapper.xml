@@ -16,7 +16,7 @@
   <select id="selectAll"  resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
-    from tab_user order by age
+    from tab_user
   </select>
 
   <insert id="insertForeach" parameterType="java.util.List" useGeneratedKeys="false">
