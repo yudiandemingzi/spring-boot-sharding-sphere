@@ -12,7 +12,10 @@ import org.apache.shardingsphere.api.config.sharding.strategy.InlineShardingStra
 import org.apache.shardingsphere.api.config.sharding.strategy.StandardShardingStrategyConfiguration;
 import org.apache.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
@@ -26,15 +29,10 @@ import java.util.Properties;
  * @Description: 连接数据库信息 包括添加插件信息
  * @date 2019/8/19 下午12:31
  */
-//@Configuration
-//@ComponentScan(basePackageClasses = DalModule.class)
-//@MapperScan(basePackages = "com.oujiong.mapper")
+@Configuration
+@ComponentScan(basePackageClasses = DalModule.class)
+@MapperScan(basePackages = "com.oujiong.mapper")
 public class DalModule {
-
-//    @Bean
-//    public PlatformTransactionManager transactionManager() throws SQLException {
-//        return new DataSourceTransactionManager(getShardingDataSource());
-//    }
 
     /**
      * SqlSessionFactory 实体
@@ -49,7 +47,7 @@ public class DalModule {
         return sessionFactory.getObject();
     }
 
-
+    @Bean
     public DataSource dataSource() throws SQLException {
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());
