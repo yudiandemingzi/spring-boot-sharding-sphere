@@ -13,7 +13,7 @@ import java.util.List;
 public interface UserService {
 
     /**
-     * 获取所有用户信息
+     *  获取所有用户信息
      */
     List<User>  list();
 
