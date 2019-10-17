@@ -18,7 +18,7 @@ public interface UserService {
     List<User>  list();
 
     /**
-     *  批量 保存用户信息
+     *   批量 保存用户信息
      * @param userVOList
      */
     String  insertForeach(List<User> userVOList);
