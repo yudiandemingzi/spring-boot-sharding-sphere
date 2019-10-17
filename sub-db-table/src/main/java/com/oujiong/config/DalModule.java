@@ -26,7 +26,7 @@ import java.util.Properties;
 
 /**
  * @author xub
- * @Description: 连接数据库信息 包括添加插件信息
+ * @Description: 连接数据库信息
  * @date 2019/8/19 下午12:31
  */
 @Configuration
