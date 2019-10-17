@@ -1,4 +1,4 @@
-# Redisson实现分布式锁
+# ShardingSphere实现分库 + 读写分离
 
 有关ShardingSphere实现分库分表前面写了7篇博客作为该项目做详细说明。
 
