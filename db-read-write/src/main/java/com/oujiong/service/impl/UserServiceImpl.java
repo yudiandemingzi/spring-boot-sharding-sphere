@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public  List<User> list() {
+    public List<User> list() {
         List<User> users = userMapper.selectAll();
         return users;
     }
