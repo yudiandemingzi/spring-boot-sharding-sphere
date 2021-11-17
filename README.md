@@ -55,6 +55,7 @@ spring-boot-sharding-ssphere # 父工程
   ---sub-db-table-read-write                  
                         
 ```
+![acda64387e0896604b5932dc433c8b77](https://user-images.githubusercontent.com/37285812/142141535-7b855cf0-efc4-417d-a21c-232008fdac56.gif)
 
 <br>
 
